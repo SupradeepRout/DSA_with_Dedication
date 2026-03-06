@@ -63,9 +63,9 @@ public class two_sum{
         throw new IllegalArgumentException("no two sum pair available ");
     }
     public static void main(String[] args) {
-        int nums[]=new int[]{2,4,6,15};
-        int target=9;
+        int nums[]=new int[]{-1,0};
+        int target=-1;
         int soln[]= twosum(nums, target);
-        System.out.println("Indices: " + soln[0] + ", " + soln[1]);
+        System.out.println("Indices: " + (soln[0]+1) + ", " + (soln[1]+1));
     }
 }
