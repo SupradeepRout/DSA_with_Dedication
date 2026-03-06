@@ -1,24 +1,48 @@
+/*
+Squares of a Sorted Array (Two Pointer Merge Approach | O(n) Time)
+
+## Problem
+Given a sorted integer array that may contain negative numbers, 
+square each element and return the resulting array in sorted order.
+
+Example:
+Input:  [-4, -1, 0, 3, 10]
+Output: [0, 1, 9, 16, 100]
+
+## Approach
+1. Separate negative and positive numbers.
+2. Square all elements.
+3. Reverse the squared negative list.
+4. Merge both sorted lists using two pointers.
+
+## Time Complexity
+O(n)
+
+## Space Complexity
+O(n)
+*/
+
 package dsa_with_dedication.two_pointer;
 
 import java.util.* ;
 
 public class square_sort_array
 {
-    public static int[] square_array(int arr[])
+    public static int[] square_array(int nums[])
     {
-        int n=arr.length;
+        int n=nums.length;
         List<Integer>pos =new ArrayList<>();
         List<Integer>neg =new ArrayList<>();
 
         for(int i=0; i < n ; i++)
         {
-            if( arr[i] >= 0 )
+            if( nums[i] >= 0 )
             {
-                pos.add(arr[i]);
+                pos.add(nums[i]);
             }
             else
             {
-                neg.add(arr[i]);
+                neg.add(nums[i]);
             }
         }
             if(neg.isEmpty())
