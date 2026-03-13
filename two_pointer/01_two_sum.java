@@ -45,7 +45,7 @@ Time Complexity: O(n)
 Space Complexity: O(1) 
 */
 
-public class two_sum{
+public class 01_two_sum {
     public static int[] twosum (int nums[], int target)
     {
         int first=0 ,last=nums.length - 1 ;
