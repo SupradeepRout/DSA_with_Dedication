@@ -26,7 +26,7 @@ package dsa_with_dedication.two_pointer;
 
 import java.util.* ;
 
-public class square_sort_array
+public class 02_square_sort_array
 {
     public static int[] square_array(int nums[])
     {
