@@ -2,6 +2,7 @@
     Complexity : O(n) time and O(1) space
     difficulty : Easy
     approach : Sliding Window
+    YouTube Link : https://www.youtube.com/watch?v=DL8LSXUsfWE&list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&index=11
 '''
 class max_subarray_sum :
     def max_sum ( self , nums : list[int] , k : int )-> int :

@@ -3,9 +3,10 @@ Definition : Given an array of positive integers nums and a positive integer tar
 return the minimal length of a subarray whose sum is greater than or equal to target. 
 If there is no such subarray, return 0 instead.
 
+Approach : Sliding Window
 complexity : O(n) time and O(1) space
 Difficulty : Medium
-
+youtube Link : https://www.youtube.com/watch?v=DL8LSXUsfWE&list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&index=11
 '''
 class smallest_subarray :
     def min_subarray( self , target : int  , nums : list[int])-> int :
