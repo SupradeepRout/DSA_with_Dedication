@@ -1,3 +1,17 @@
+'''
+Definition : Given two strings s and t, return the minimum window in s which will contain all the characters in t.
+If there is no such window in s that covers all characters in t, return the empty string "".Approach : Sliding Window
+
+Time Complexity : O(n*m) where n is the length of the string s and m is the length of the string t
+Space Complexity : O(n + m) where n is the number of unique characters in string s and m is the number of unique characters in string t
+Difficulty : Hard
+
+problem Link : https://leetcode.com/problems/minimum-window-substring/description/
+youtube Link :https://www.youtube.com/watch?v=9wc8HZH_sh4&list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&index=17
+
+'''
+
+
 from collections import Counter
 # counter is a subclass of dict that helps count hashable objects. 
 # It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.
@@ -18,8 +32,9 @@ class min_window_subString :
             dict_s[s[high]] = dict_s.get(s[high],0 ) + 1
             while (self.compare(dict_s , dict_t)):
                 window_len  = high - low + 1 
-                min_len = min(min_len , window_len)
-                start = low 
+                if window_len < min_len :
+                    min_len = window_len
+                    start = low 
                 dict_s[s[low]] -= 1
                 low += 1
                 
