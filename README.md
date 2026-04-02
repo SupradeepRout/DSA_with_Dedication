@@ -18,7 +18,7 @@ This repository contains my Data Structures and Algorithms practice for placemen
 
 ## Languages
 
-- Java
+- Python
 
 ## Goal
 
