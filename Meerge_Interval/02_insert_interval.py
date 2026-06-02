@@ -1,6 +1,7 @@
 '''
 Problem Link :https://leetcode.com/problems/insert-interval/submissions/1994614272/
 Video Link : https://www.youtube.com/watch?v=yAopxaHmRn0&list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2&index=35
+Level : Easy
 '''
 
 class Insert_interval : 
@@ -27,7 +28,7 @@ class Insert_interval :
         
         for i in range(1,n) :
             start2= nums[i][0]
-            end2= nums[i][1]
+            end2= nums[i][1] 
             
             if end1 >= start2 :
                 end1 = max(end1 , end2)
