@@ -1,3 +1,9 @@
+'''
+Definition : Common interval
+Link :
+'''
+
+
 class Common_interval:
     def intervalIntersection(self, first: list[list[int]], second: list[list[int]]) -> list[list[int]]:
         m = len(first)
